@@ -323,3 +323,27 @@ html { scroll-behavior: smooth; }
   .stat-number { font-size: 2.1rem; }
   .hero-glow-1, .hero-glow-2 { display: none; }
 }
+
+/* ── Image copyright badge ── */
+.img-copyright {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.82);
+  background: rgba(0,0,0,0.48);
+  padding: 2px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  z-index: 5;
+}
+
+/* ── Illustrative note ── */
+.img-illus {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  margin-top: 6px;
+  text-align: right;
+}
