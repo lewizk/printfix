@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | PrintFix Technologies</title>
+  <meta name="description" content="Learn about PrintFix Technologies — Kenya's enterprise printer repair and managed print services company serving government, corporates, and organizations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0D1B3E', 'navy-light': '#162550', orange: '#F97316',
+            'orange-dark': '#EA6C0A', 'blue-light': '#3B82F6',
+            'slate-light': '#F1F5F9', 'dark-text': '#1E293B'
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-sans text-dark-text antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <div class="w-9 h-9 bg-orange rounded-lg flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="11" rx="2" fill="white"/><rect x="6" y="3" width="12" height="7" rx="1" fill="white" fill-opacity="0.6"/><rect x="7" y="13" width="10" height="6" rx="1" fill="#F97316"/><circle cx="17" cy="11.5" r="1.2" fill="#F97316"/></svg>
+          </div>
+          <div class="leading-none">
+            <span class="text-white font-extrabold text-lg">PrintFix</span>
+            <span class="text-orange font-extrabold text-lg"> Technologies</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">Home</a>
+          <a href="services.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">Services</a>
+          <a href="about.html" class="nav-link text-orange font-semibold text-sm">About Us</a>
+          <a href="contact.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">Contact</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-5">Get a Quote</a>
+        </div>
+        <button id="hamburger" class="hamburger md:hidden flex flex-col justify-center p-1" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="fixed inset-0 bg-navy z-40 flex flex-col pt-20 px-6 md:hidden">
+      <a href="index.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">Home</a>
+      <a href="services.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">Services</a>
+      <a href="about.html" class="mobile-nav-link text-orange text-xl font-semibold py-4 border-b border-white/10">About Us</a>
+      <a href="contact.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">Contact</a>
+      <div class="mt-8"><a href="contact.html" class="btn-primary w-full text-center block text-lg">Get a Quote</a></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <nav class="flex justify-center mb-4 text-sm" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-slate-400">
+          <li><a href="index.html" class="hover:text-orange transition-colors">Home</a></li>
+          <li class="text-slate-600">/</li>
+          <li class="text-white">About Us</li>
+        </ol>
+      </nav>
+      <span class="section-label">Who We Are</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white mb-4">About PrintFix Technologies</h1>
+      <p class="text-slate-300 text-lg max-w-2xl mx-auto">Kenya's trusted enterprise printer solutions partner — reliable, certified, and built for organizational scale.</p>
+    </div>
+  </section>
+
+  <!-- COMPANY STORY -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="fade-in">
+          <span class="section-label">Our Story</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-6">Built to Serve Enterprise Kenya</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-5">PrintFix Technologies was founded to solve a critical gap in Kenya's market: enterprise organizations — government ministries, corporates, NGOs — were being served by small, informal repair shops unable to meet the reliability, accountability, and speed that institutional clients require.</p>
+          <p class="text-slate-600 leading-relaxed mb-5">We built PrintFix from the ground up as an enterprise-grade service organization: certified technicians, SLA-backed contracts, genuine OEM parts, and a management team experienced in serving large institutions across East Africa.</p>
+          <p class="text-slate-600 leading-relaxed mb-6">Today, PrintFix manages print infrastructure for government ministries, leading banks, multinational NGOs, and corporate organizations across Kenya — delivering uptime, cost control, and the accountability that institutional clients demand.</p>
+          <div class="flex flex-wrap gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange">500+</div>
+              <div class="text-sm text-slate-500 font-medium">Printers Serviced</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange">50+</div>
+              <div class="text-sm text-slate-500 font-medium">Enterprise Clients</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange">8</div>
+              <div class="text-sm text-slate-500 font-medium">Brands Certified</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange">47</div>
+              <div class="text-sm text-slate-500 font-medium">Counties Covered</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="bg-navy rounded-3xl p-10 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-orange/10 rounded-full translate-x-16 -translate-y-16"></div>
+            <div class="relative z-10">
+              <p class="text-4xl text-orange font-black mb-4 leading-none">"</p>
+              <p class="text-xl font-light text-slate-200 leading-relaxed mb-8">Our mission is to ensure that no organization in Kenya is held back by printer downtime. Reliable print infrastructure is as critical as reliable power and connectivity — and it deserves the same enterprise-grade attention.</p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-orange rounded-full flex items-center justify-center text-white font-black">PF</div>
+                <div>
+                  <p class="font-bold text-white">PrintFix Leadership Team</p>
+                  <p class="text-slate-400 text-sm">PrintFix Technologies, Nairobi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VALUES -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-in">
+        <span class="section-label">What Drives Us</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Mission &amp; Values</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-sm fade-in">
+          <div class="w-12 h-12 bg-orange/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Our Mission</h3>
+          <p class="text-slate-600 leading-relaxed">To deliver reliable, cost-effective printer solutions that keep organizations running without interruption — through expert service, genuine parts, and enterprise-grade accountability that institutional clients can depend on.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm fade-in">
+          <div class="w-12 h-12 bg-orange/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3">Our Vision</h3>
+          <p class="text-slate-600 leading-relaxed">To be East Africa's most trusted managed print services partner — the organization that governments, NGOs, and corporates turn to for guaranteed printing uptime and transparent print cost management.</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-8 text-center shadow-sm border-t-4 border-orange fade-in">
+          <div class="text-4xl mb-4">🛡️</div>
+          <h3 class="font-bold text-navy text-lg mb-3">Reliability</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">We show up, on time, every time. Our SLA commitments are contractual — not aspirational. When we commit to a response time, we honour it.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 text-center shadow-sm border-t-4 border-blue-light fade-in">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="font-bold text-navy text-lg mb-3">Integrity</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Transparent pricing. Genuine parts with certificates. Honest diagnostics — we never recommend unnecessary repairs. Your trust is our most valuable asset.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 text-center shadow-sm border-t-4 border-navy fade-in">
+          <div class="text-4xl mb-4">⭐</div>
+          <h3 class="font-bold text-navy text-lg mb-3">Excellence</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Certified technicians. Manufacturer-standard repairs. We don't cut corners — and we don't consider a job complete until the printer is performing to specification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-in">
+        <span class="section-label">Authorizations &amp; Certifications</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Trained &amp; Authorized</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Our technicians hold manufacturer certifications and vendor authorizations — giving you the assurance that your equipment is serviced to OEM standards.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">HP</div>
+          <p class="text-sm font-semibold text-slate-600">Authorized Service Partner</p>
+          <p class="text-xs text-slate-400 mt-1">LaserJet &amp; OfficeJet Series</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Canon</div>
+          <p class="text-sm font-semibold text-slate-600">Certified Repair Partner</p>
+          <p class="text-xs text-slate-400 mt-1">imageRUNNER &amp; MF Series</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Kyocera</div>
+          <p class="text-sm font-semibold text-slate-600">Authorized Dealer &amp; Service</p>
+          <p class="text-xs text-slate-400 mt-1">ECOSYS &amp; TASKalfa</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Ricoh</div>
+          <p class="text-sm font-semibold text-slate-600">Authorized Service Center</p>
+          <p class="text-xs text-slate-400 mt-1">SP &amp; MP Series</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Epson</div>
+          <p class="text-sm font-semibold text-slate-600">Certified Technicians</p>
+          <p class="text-xs text-slate-400 mt-1">WorkForce &amp; EcoTank</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Brother</div>
+          <p class="text-sm font-semibold text-slate-600">Trained Service Agents</p>
+          <p class="text-xs text-slate-400 mt-1">MFC &amp; HL Series</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Xerox</div>
+          <p class="text-sm font-semibold text-slate-600">Certified Repair Partner</p>
+          <p class="text-xs text-slate-400 mt-1">WorkCentre Series</p>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100 fade-in hover:border-orange transition-colors">
+          <div class="text-3xl font-black text-navy mb-2">Samsung</div>
+          <p class="text-sm font-semibold text-slate-600">Authorized Service</p>
+          <p class="text-xs text-slate-400 mt-1">ProXpress &amp; Xpress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MFI PARTNERSHIP -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <span class="section-label">Strategic Partnership</span>
+          <h2 class="text-3xl font-bold text-white mb-5">Aligned with MFI Group</h2>
+          <p class="text-slate-300 leading-relaxed mb-5">PrintFix Technologies operates in strategic alignment with MFI Group — East Africa's leading technology solutions provider. This partnership gives PrintFix clients access to the same enterprise-grade standards, authorized partnerships, and institutional client networks that MFI has built over four decades across 18 African countries.</p>
+          <p class="text-slate-300 leading-relaxed mb-6">MFI partners with Kyocera, Ricoh, Canon, and HP Enterprise — brands that PrintFix is authorized to service. Organizations that are MFI clients benefit from seamlessly integrated printer support through PrintFix.</p>
+          <a href="contact.html" class="btn-primary">Enquire About Partnership Benefits</a>
+        </div>
+        <div class="fade-in">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <h4 class="text-white font-bold mb-5">Partnership Benefits for MFI Clients</h4>
+            <ul class="space-y-4">
+              <li class="flex gap-3 text-slate-300 text-sm">
+                <span class="text-orange font-black">✓</span>
+                Shared authorization for Kyocera, Ricoh, Canon, HP equipment
+              </li>
+              <li class="flex gap-3 text-slate-300 text-sm">
+                <span class="text-orange font-black">✓</span>
+                Priority service levels for MFI-affiliated organizations
+              </li>
+              <li class="flex gap-3 text-slate-300 text-sm">
+                <span class="text-orange font-black">✓</span>
+                Coordinated procurement and service for large deployments
+              </li>
+              <li class="flex gap-3 text-slate-300 text-sm">
+                <span class="text-orange font-black">✓</span>
+                Pan-East Africa service coverage alignment
+              </li>
+              <li class="flex gap-3 text-slate-300 text-sm">
+                <span class="text-orange font-black">✓</span>
+                Shared enterprise client standards (KPMG, Deloitte, Shell, DHL standard)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-in">
+        <span class="section-label">Where We Operate</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Kenya-wide Coverage</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">With field teams based in major cities and dispatch capacity across all 47 counties, PrintFix can support your offices wherever they are located.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 fade-in">
+          <div class="text-3xl mb-3">🏙️</div>
+          <h4 class="font-bold text-navy mb-1">Nairobi</h4>
+          <p class="text-xs text-slate-500">Head office &amp; main dispatch hub. Same-day service across CBD, Westlands, Karen, Upperhill, Eastlands.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 fade-in">
+          <div class="text-3xl mb-3">🌊</div>
+          <h4 class="font-bold text-navy mb-1">Mombasa</h4>
+          <p class="text-xs text-slate-500">Resident field team covering Mombasa Island, Likoni, Nyali, Bamburi, and the port area.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 fade-in">
+          <div class="text-3xl mb-3">🏔️</div>
+          <h4 class="font-bold text-navy mb-1">Nakuru &amp; Kisumu</h4>
+          <p class="text-xs text-slate-500">Servicing the Rift Valley and Lake Region — major government offices and corporate branches covered.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 fade-in">
+          <div class="text-3xl mb-3">🌍</div>
+          <h4 class="font-bold text-navy mb-1">All 47 Counties</h4>
+          <p class="text-xs text-slate-500">Dispatch technicians to any county in Kenya for organizations on Enterprise or MPS contracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-in">
+        <span class="section-label">Our People</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">The PrintFix Team</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Experienced professionals committed to delivering world-class printer service to enterprise clients across Kenya.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center fade-in">
+          <div class="w-24 h-24 bg-gradient-to-br from-navy to-navy-light rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-black text-white shadow-lg">DK</div>
+          <h3 class="font-bold text-navy text-lg">David Kamau</h3>
+          <p class="text-orange text-sm font-semibold">CEO &amp; Founder</p>
+          <p class="text-slate-500 text-xs mt-2 leading-relaxed">15 years in enterprise technology solutions across East Africa</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-24 h-24 bg-gradient-to-br from-orange to-orange-dark rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-black text-white shadow-lg">AM</div>
+          <h3 class="font-bold text-navy text-lg">Alice Mwangi</h3>
+          <p class="text-orange text-sm font-semibold">Head of Technical Services</p>
+          <p class="text-slate-500 text-xs mt-2 leading-relaxed">HP &amp; Kyocera certified engineer with 10+ years of field experience</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-24 h-24 bg-gradient-to-br from-blue-light to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-black text-white shadow-lg">PO</div>
+          <h3 class="font-bold text-navy text-lg">Peter Omondi</h3>
+          <p class="text-orange text-sm font-semibold">Client Relations Manager</p>
+          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Specialist in government and NGO account management, SLA compliance</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-24 h-24 bg-gradient-to-br from-slate-600 to-slate-800 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-black text-white shadow-lg">RN</div>
+          <h3 class="font-bold text-navy text-lg">Rachel Njeri</h3>
+          <p class="text-orange text-sm font-semibold">Field Service Lead</p>
+          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Manages field technician teams and multi-county service operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-orange py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Ready to Work with PrintFix?</h2>
+      <p class="text-orange-100 text-lg mb-8">Talk to our team about a service agreement tailored to your organization's fleet size, locations, and SLA requirements.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="bg-white text-orange font-bold py-3 px-8 rounded-full hover:bg-orange-50 transition-colors">Get a Service Quote</a>
+        <a href="services.html" class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition-colors">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-slate-300 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 bg-orange rounded-lg flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="11" rx="2" fill="white"/><rect x="6" y="3" width="12" height="7" rx="1" fill="white" fill-opacity="0.6"/><rect x="7" y="13" width="10" height="6" rx="1" fill="#F97316"/><circle cx="17" cy="11.5" r="1.2" fill="#F97316"/></svg>
+            </div>
+            <div><span class="text-white font-extrabold">PrintFix</span><span class="text-orange font-extrabold"> Technologies</span></div>
+          </a>
+          <p class="text-sm leading-relaxed text-slate-400 mb-4">Enterprise printer solutions across Kenya and East Africa.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html#repair" class="footer-link">Printer Repair</a></li>
+            <li><a href="services.html#maintenance" class="footer-link">Maintenance Contracts</a></li>
+            <li><a href="services.html#mps" class="footer-link">Managed Print Services</a></li>
+            <li><a href="services.html#supplies" class="footer-link">Toner &amp; Parts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="tel:+254714445601" class="footer-link">+254 714 445 601</a></li>
+            <li><a href="mailto:info@printfix.co.ke" class="footer-link">info@printfix.co.ke</a></li>
+            <li class="text-slate-400">Nairobi, Kenya</li>
+            <li class="text-slate-400">Mon–Fri: 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>© 2025 PrintFix Technologies. All rights reserved.</p>
+        <p>Enterprise Printer Solutions · Nairobi, Kenya</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/254714445601?text=Hello%20PrintFix%2C%20I%20need%20printer%20support." class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>

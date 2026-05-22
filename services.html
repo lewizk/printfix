@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | PrintFix Technologies</title>
+  <meta name="description" content="Printer repair, preventive maintenance, managed print services, on-site support and toner supply for enterprises and government organizations in Kenya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0D1B3E', 'navy-light': '#162550', orange: '#F97316',
+            'orange-dark': '#EA6C0A', 'blue-light': '#3B82F6',
+            'slate-light': '#F1F5F9', 'dark-text': '#1E293B'
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-sans text-dark-text antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <div class="w-9 h-9 bg-orange rounded-lg flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="11" rx="2" fill="white"/><rect x="6" y="3" width="12" height="7" rx="1" fill="white" fill-opacity="0.6"/><rect x="7" y="13" width="10" height="6" rx="1" fill="#F97316"/><circle cx="17" cy="11.5" r="1.2" fill="#F97316"/></svg>
+          </div>
+          <div class="leading-none">
+            <span class="text-white font-extrabold text-lg">PrintFix</span>
+            <span class="text-orange font-extrabold text-lg"> Technologies</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">Home</a>
+          <a href="services.html" class="nav-link text-orange font-semibold text-sm">Services</a>
+          <a href="about.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">About Us</a>
+          <a href="contact.html" class="nav-link text-white hover:text-orange transition-colors font-medium text-sm">Contact</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-5">Get a Quote</a>
+        </div>
+        <button id="hamburger" class="hamburger md:hidden flex flex-col justify-center p-1" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="fixed inset-0 bg-navy z-40 flex flex-col pt-20 px-6 md:hidden">
+      <a href="index.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">Home</a>
+      <a href="services.html" class="mobile-nav-link text-orange text-xl font-semibold py-4 border-b border-white/10">Services</a>
+      <a href="about.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">About Us</a>
+      <a href="contact.html" class="mobile-nav-link text-white text-xl font-semibold py-4 border-b border-white/10">Contact</a>
+      <div class="mt-8"><a href="contact.html" class="btn-primary w-full text-center block text-lg">Get a Quote</a></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <nav class="flex justify-center mb-4 text-sm" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-slate-400">
+          <li><a href="index.html" class="hover:text-orange transition-colors">Home</a></li>
+          <li class="text-slate-600">/</li>
+          <li class="text-white">Services</li>
+        </ol>
+      </nav>
+      <span class="section-label">What We Offer</span>
+      <h1 class="text-4xl sm:text-5xl font-black text-white mb-4">Our Services</h1>
+      <p class="text-slate-300 text-lg max-w-2xl mx-auto">Comprehensive printer solutions designed for enterprise scale — from single-fault repairs to full fleet managed print contracts.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE 1: REPAIR -->
+  <section id="repair" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="fade-in">
+          <span class="section-label">Service 01</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Printer Repair &amp; Diagnostics</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">Our certified technicians diagnose and repair all printer makes and models using genuine OEM parts. Every repair is documented with a job card and backed by a 6-month warranty on parts and labour.</p>
+          <div class="bg-slate-50 rounded-xl p-5 mb-6">
+            <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-3">Pricing Guide</p>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200 text-sm">
+              <span class="text-slate-700">Basic diagnostic &amp; cleaning</span>
+              <span class="font-bold text-navy">KSh 1,500</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200 text-sm">
+              <span class="text-slate-700">Inkjet repair (paper feed, head)</span>
+              <span class="font-bold text-navy">KSh 2,500 – 5,000</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200 text-sm">
+              <span class="text-slate-700">Laser printer repair (fuser, drum)</span>
+              <span class="font-bold text-navy">KSh 4,000 – 10,000</span>
+            </div>
+            <div class="flex justify-between items-center py-2 text-sm">
+              <span class="text-slate-700">Multifunction / heavy-duty</span>
+              <span class="font-bold text-navy">KSh 6,000 – 15,000</span>
+            </div>
+          </div>
+          <ul class="check-list">
+            <li>Paper jam, roller, and feed mechanism repairs</li>
+            <li>Fuser assembly replacement</li>
+            <li>Drum, cartridge, and ink system repairs</li>
+            <li>Network and wireless connectivity issues</li>
+            <li>Error code diagnosis and firmware updates</li>
+            <li>Full cleaning and calibration post-repair</li>
+          </ul>
+        </div>
+        <div class="fade-in">
+          <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8">
+            <h3 class="font-bold text-navy mb-4 text-lg">Supported Printer Types</h3>
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">🖨️</div>
+                <p class="text-xs font-semibold text-navy">Laser</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">🖨️</div>
+                <p class="text-xs font-semibold text-navy">Inkjet</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">📠</div>
+                <p class="text-xs font-semibold text-navy">Multifunction (MFP)</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">🗂️</div>
+                <p class="text-xs font-semibold text-navy">Wide-format</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">📋</div>
+                <p class="text-xs font-semibold text-navy">Label / Barcode</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center border border-slate-100 shadow-sm">
+                <div class="text-2xl mb-1">📦</div>
+                <p class="text-xs font-semibold text-navy">High-volume</p>
+              </div>
+            </div>
+            <div class="bg-orange/10 rounded-xl p-4">
+              <p class="text-sm text-orange font-semibold mb-1">6-Month Warranty</p>
+              <p class="text-xs text-slate-600">All repaired parts and labour are covered by our 6-month warranty. If the same fault reoccurs within the warranty period, we fix it at no charge.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 2: MAINTENANCE -->
+  <section id="maintenance" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="order-2 lg:order-1 fade-in">
+          <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm">
+            <h3 class="font-bold text-navy mb-5 text-lg">Maintenance Contract Tiers</h3>
+            <div class="space-y-4">
+              <div class="border border-slate-200 rounded-xl p-5">
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="font-bold text-navy">Basic</h4>
+                  <span class="bg-slate-100 text-slate-600 text-xs font-semibold px-3 py-1 rounded-full">Quarterly</span>
+                </div>
+                <ul class="check-list text-sm">
+                  <li>Quarterly on-site inspection</li>
+                  <li>Cleaning and calibration</li>
+                  <li>24hr emergency response</li>
+                </ul>
+              </div>
+              <div class="border-2 border-orange rounded-xl p-5 relative">
+                <span class="absolute -top-3 left-4 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="font-bold text-navy">Professional</h4>
+                  <span class="bg-orange/10 text-orange text-xs font-semibold px-3 py-1 rounded-full">Monthly</span>
+                </div>
+                <ul class="check-list text-sm">
+                  <li>Monthly preventive maintenance visit</li>
+                  <li>Genuine parts replacement included</li>
+                  <li>Same-day priority response</li>
+                  <li>Dedicated account manager</li>
+                  <li>Monthly performance reports</li>
+                </ul>
+              </div>
+              <div class="border border-slate-200 rounded-xl p-5">
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="font-bold text-navy">Enterprise</h4>
+                  <span class="bg-navy text-white text-xs font-semibold px-3 py-1 rounded-full">Custom SLA</span>
+                </div>
+                <ul class="check-list text-sm">
+                  <li>Unlimited on-site visits</li>
+                  <li>All parts and consumables included</li>
+                  <li>4hr emergency response SLA</li>
+                  <li>Multi-branch fleet coverage</li>
+                  <li>Quarterly executive reporting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 fade-in">
+          <span class="section-label">Service 02</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Preventive Maintenance Contracts</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">Prevent costly breakdowns before they happen. Our scheduled maintenance programs keep your printers running at peak efficiency, reducing unplanned downtime by up to 80%.</p>
+          <p class="text-slate-600 leading-relaxed mb-6">Maintenance contracts include priority response, dedicated technicians, genuine consumables, and detailed service reports — giving your IT and procurement teams full accountability and cost predictability.</p>
+          <ul class="check-list mb-6">
+            <li>Scheduled on-site visits (monthly or quarterly)</li>
+            <li>Cleaning of rollers, paper paths, and fuser units</li>
+            <li>Firmware and driver updates</li>
+            <li>Consumable usage monitoring and alerts</li>
+            <li>Proactive parts replacement before failure</li>
+            <li>Detailed service reports and job cards</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Request a Maintenance Contract</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 3: MPS -->
+  <section id="mps" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="fade-in">
+          <span class="section-label">Service 03</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Managed Print Services (MPS)</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">Our MPS model puts your entire print infrastructure under PrintFix management — hardware, supplies, maintenance, and support — billed on a simple per-page cost model.</p>
+          <p class="text-slate-600 leading-relaxed mb-6">Organizations typically reduce print costs by 20–35% in the first year through better fleet utilization, elimination of supply over-ordering, and reduced emergency repair spending.</p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-8">
+            <div class="bg-slate-50 rounded-xl p-5 text-center">
+              <div class="text-3xl font-black text-orange mb-1">30%</div>
+              <p class="text-sm text-slate-600 font-medium">Average cost reduction</p>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-5 text-center">
+              <div class="text-3xl font-black text-orange mb-1">99%</div>
+              <p class="text-sm text-slate-600 font-medium">Fleet uptime target</p>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-5 text-center">
+              <div class="text-3xl font-black text-orange mb-1">1</div>
+              <p class="text-sm text-slate-600 font-medium">Invoice per month</p>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-5 text-center">
+              <div class="text-3xl font-black text-orange mb-1">0</div>
+              <p class="text-sm text-slate-600 font-medium">Supply stockouts</p>
+            </div>
+          </div>
+          <ul class="check-list">
+            <li>Fleet audit and optimization assessment</li>
+            <li>Per-page billing (mono and colour)</li>
+            <li>Automatic toner replenishment</li>
+            <li>Proactive monitoring and remote diagnostics</li>
+            <li>All maintenance and repairs included</li>
+            <li>Monthly usage and cost reports</li>
+          </ul>
+        </div>
+        <div class="fade-in">
+          <div class="bg-navy rounded-3xl p-8 text-white">
+            <h3 class="font-bold text-xl mb-6">How MPS Works</h3>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange rounded-xl flex items-center justify-center text-white font-black text-lg flex-shrink-0">1</div>
+                <div>
+                  <h4 class="font-bold text-white mb-1">Fleet Audit</h4>
+                  <p class="text-slate-300 text-sm">We assess your existing printers, usage patterns, and total print costs to build an accurate baseline.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange rounded-xl flex items-center justify-center text-white font-black text-lg flex-shrink-0">2</div>
+                <div>
+                  <h4 class="font-bold text-white mb-1">Optimisation Plan</h4>
+                  <p class="text-slate-300 text-sm">We recommend right-sizing the fleet, eliminating redundant devices, and setting print policies.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange rounded-xl flex items-center justify-center text-white font-black text-lg flex-shrink-0">3</div>
+                <div>
+                  <h4 class="font-bold text-white mb-1">Deployment &amp; Monitoring</h4>
+                  <p class="text-slate-300 text-sm">We deploy monitoring tools, configure toner alerts, and take ownership of all fleet management.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange rounded-xl flex items-center justify-center text-white font-black text-lg flex-shrink-0">4</div>
+                <div>
+                  <h4 class="font-bold text-white mb-1">Single Monthly Invoice</h4>
+                  <p class="text-slate-300 text-sm">One predictable per-page bill covering all supplies, maintenance, and support — zero surprises.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-white/10">
+              <a href="contact.html" class="btn-primary w-full text-center block">Request MPS Proposal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 4: ON-SITE SUPPORT -->
+  <section id="support" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="order-2 lg:order-1 fade-in">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl p-6 shadow-sm text-center border border-slate-100">
+              <div class="text-3xl mb-2">🚗</div>
+              <h4 class="font-bold text-navy text-sm mb-1">On-site Visit</h4>
+              <p class="text-xs text-slate-500">Technician dispatched to your premises within SLA window</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-sm text-center border border-slate-100">
+              <div class="text-3xl mb-2">💻</div>
+              <h4 class="font-bold text-navy text-sm mb-1">Remote Diagnostics</h4>
+              <p class="text-xs text-slate-500">Resolve driver, firmware, and network issues without a site visit</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-sm text-center border border-slate-100">
+              <div class="text-3xl mb-2">📞</div>
+              <h4 class="font-bold text-navy text-sm mb-1">Phone &amp; WhatsApp</h4>
+              <p class="text-xs text-slate-500">Immediate support from our helpdesk during business hours</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-sm text-center border border-slate-100">
+              <div class="text-3xl mb-2">🌍</div>
+              <h4 class="font-bold text-navy text-sm mb-1">Multi-location</h4>
+              <p class="text-xs text-slate-500">Coordinated support across all your offices across Kenya</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 fade-in">
+          <span class="section-label">Service 04</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">On-site &amp; Remote Technical Support</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">Whether you need an urgent on-site callout or quick remote assistance, PrintFix support is available by phone, WhatsApp, or field visit — with guaranteed response times tied to your service agreement.</p>
+          <ul class="check-list mb-6">
+            <li>24hr on-site response (standard SLA)</li>
+            <li>4hr emergency response (premium SLA)</li>
+            <li>Remote network and driver troubleshooting</li>
+            <li>Multi-branch coordination and coverage</li>
+            <li>Dedicated account manager escalation path</li>
+            <li>Post-service follow-up and sign-off</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 5: SUPPLIES -->
+  <section id="supplies" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="fade-in">
+          <span class="section-label">Service 05</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Genuine Toner &amp; OEM Parts Supply</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">We supply original manufacturer toner cartridges, drums, fuser units, rollers, and spare parts for all major printer brands. Avoid counterfeit supplies that damage your printers and void warranties.</p>
+          <p class="text-slate-600 leading-relaxed mb-6">Organizations on our maintenance or MPS plans benefit from automatic replenishment — supplies are delivered before you run out, eliminating supply emergencies.</p>
+          <ul class="check-list mb-6">
+            <li>OEM toner cartridges (black and colour)</li>
+            <li>High-yield compatible cartridges (quality-certified)</li>
+            <li>Drum units and imaging kits</li>
+            <li>Fuser assemblies and maintenance kits</li>
+            <li>Paper feed rollers and separation pads</li>
+            <li>Delivery to your office across Kenya</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Request Toner Quote</a>
+        </div>
+        <div class="fade-in">
+          <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
+            <h3 class="font-bold text-navy mb-4 text-lg">Supported Brands &amp; Cartridge Types</h3>
+            <div class="space-y-3">
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">HP</span>
+                <div class="text-sm text-slate-600">LaserJet, OfficeJet, DeskJet, PageWide, MFP Series</div>
+              </div>
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">Canon</span>
+                <div class="text-sm text-slate-600">imageCLASS, PIXMA, imageRUNNER, MF Series</div>
+              </div>
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">Kyocera</span>
+                <div class="text-sm text-slate-600">ECOSYS, TASKalfa — toner, drum, maintenance kits</div>
+              </div>
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">Ricoh</span>
+                <div class="text-sm text-slate-600">SP, MP, IM Series — all consumables</div>
+              </div>
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">Epson</span>
+                <div class="text-sm text-slate-600">WorkForce, EcoTank, L-Series ink and cartridges</div>
+              </div>
+              <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm">
+                <span class="font-black text-navy text-lg w-20">Brother</span>
+                <div class="text-sm text-slate-600">MFC, DCP, HL Series — toner and drum units</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-in">
+        <span class="section-label">Our Process</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">From Call to Resolution in 4 Steps</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-orange rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-2xl font-black">1</div>
+          <h3 class="font-bold text-white text-lg mb-2">Book</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Call, WhatsApp, or submit our online form. Describe the fault and your location.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-orange rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-2xl font-black">2</div>
+          <h3 class="font-bold text-white text-lg mb-2">Diagnose</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Our technician arrives within your SLA window, runs a full diagnostic, and provides a written quotation.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-orange rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-2xl font-black">3</div>
+          <h3 class="font-bold text-white text-lg mb-2">Repair</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">With your approval, we complete the repair using genuine parts, test the printer, and hand over a job card.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-orange rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-2xl font-black">4</div>
+          <h3 class="font-bold text-white text-lg mb-2">Follow-up</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Your account manager checks in 7 days post-repair to confirm the printer is performing correctly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLA TABLE -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 fade-in">
+        <span class="section-label">SLA Guarantee</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Response Time Commitments</h2>
+        <p class="text-slate-600 text-lg max-w-xl mx-auto">Our service level agreements are contractually binding — not aspirational. Choose the plan that matches your operational requirements.</p>
+      </div>
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-100 fade-in">
+        <table class="sla-table">
+          <thead>
+            <tr>
+              <th>Service Tier</th>
+              <th>Initial Response</th>
+              <th>On-site Arrival</th>
+              <th>Resolution Target</th>
+              <th>Coverage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold text-navy">Basic</td>
+              <td>4 business hours</td>
+              <td>Next business day</td>
+              <td>48 hours</td>
+              <td>Mon–Fri, 8am–6pm</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-navy">Professional</td>
+              <td>2 business hours</td>
+              <td>Same day</td>
+              <td>24 hours</td>
+              <td>Mon–Sat, 7am–7pm</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-orange">Enterprise</td>
+              <td>30 minutes</td>
+              <td>4 hours</td>
+              <td>8 hours</td>
+              <td>7 days, 6am–10pm</td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-navy">Emergency Callout</td>
+              <td>Immediate</td>
+              <td>2 hours (Nairobi)</td>
+              <td>Best effort</td>
+              <td>Any time</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-orange py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Get a Customized Service Proposal</h2>
+      <p class="text-orange-100 text-lg mb-8">Tell us about your printer fleet and we'll design a service agreement that fits your budget and SLA requirements.</p>
+      <a href="contact.html" class="bg-white text-orange font-bold py-3 px-10 rounded-full hover:bg-orange-50 transition-colors text-lg">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-slate-300 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 bg-orange rounded-lg flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="11" rx="2" fill="white"/><rect x="6" y="3" width="12" height="7" rx="1" fill="white" fill-opacity="0.6"/><rect x="7" y="13" width="10" height="6" rx="1" fill="#F97316"/><circle cx="17" cy="11.5" r="1.2" fill="#F97316"/></svg>
+            </div>
+            <div><span class="text-white font-extrabold">PrintFix</span><span class="text-orange font-extrabold"> Technologies</span></div>
+          </a>
+          <p class="text-sm leading-relaxed text-slate-400 mb-4">Enterprise printer solutions across Kenya and East Africa.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#repair" class="footer-link">Printer Repair</a></li>
+            <li><a href="#maintenance" class="footer-link">Maintenance Contracts</a></li>
+            <li><a href="#mps" class="footer-link">Managed Print Services</a></li>
+            <li><a href="#supplies" class="footer-link">Toner &amp; Parts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="tel:+254714445601" class="footer-link">+254 714 445 601</a></li>
+            <li><a href="mailto:info@printfix.co.ke" class="footer-link">info@printfix.co.ke</a></li>
+            <li class="text-slate-400">Nairobi, Kenya</li>
+            <li class="text-slate-400">Mon–Fri: 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>© 2025 PrintFix Technologies. All rights reserved.</p>
+        <p>Enterprise Printer Solutions · Nairobi, Kenya</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/254714445601?text=Hello%20PrintFix%2C%20I%20need%20printer%20support." class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>
