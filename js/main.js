@@ -58,10 +58,13 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.stat-number, .fade-in').forEach(el => observer.observe(el));
 
-// Contact form validation
+// Contact form — AJAX submission via Formsubmit.co
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Client-side validation
     const required = contactForm.querySelectorAll('[required]');
     let valid = true;
     required.forEach(field => {
@@ -74,12 +77,42 @@ if (contactForm) {
         field.style.boxShadow = '';
       }
     });
+
     const errEl = document.getElementById('form-error');
+    const successEl = document.getElementById('form-success');
     if (!valid) {
-      e.preventDefault();
       if (errEl) errEl.classList.remove('hidden');
-    } else {
-      if (errEl) errEl.classList.add('hidden');
+      return;
+    }
+    if (errEl) errEl.classList.add('hidden');
+
+    // Disable button while sending
+    const btn = document.getElementById('submit-btn');
+    const originalText = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/info@printfix.co.ke', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm),
+      });
+
+      if (res.ok) {
+        // Show success, hide form fields
+        if (successEl) {
+          successEl.classList.remove('hidden');
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        contactForm.reset();
+      } else {
+        throw new Error('non-ok response');
+      }
+    } catch (_) {
+      // Network error or blocked — fall back to native submit
+      contactForm.submit();
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
     }
   });
 }
