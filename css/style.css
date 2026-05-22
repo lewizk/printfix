@@ -322,6 +322,33 @@ html { scroll-behavior: smooth; }
 @media (max-width: 768px) {
   .stat-number { font-size: 2.1rem; }
   .hero-glow-1, .hero-glow-2 { display: none; }
+
+  /* Tighter card padding on mobile */
+  .service-card  { padding: 1.25rem; }
+  .testimonial-card { padding: 1.25rem; }
+}
+
+/* Mobile hero: full-bleed photo with gradient overlay */
+@media (max-width: 1023px) {
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../assets/images/20251003_103123.jpg') center top / cover no-repeat;
+    z-index: 0;
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 27, 62, 0.55) 0%,
+      rgba(13, 27, 62, 0.82) 60%,
+      rgba(13, 27, 62, 0.95) 100%
+    );
+    z-index: 1;
+  }
 }
 
 /* ── Image copyright badge ── */
